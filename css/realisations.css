@@ -365,11 +365,22 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
+/* Mise en grille 2 colonnes */
 .projects-container {
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
 }
+
+/* Style des icônes Solo/Groupe */
+.project-type-icon {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    cursor: help;
+}
+
 
 .info-card,
 .learning-card,

@@ -214,6 +214,62 @@ main {
     box-shadow: 0 26px 54x rgba(0,0,0,0.65);
 }
 
+/* Conteneur principal du bilan */
+.bilan-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(14, 20, 36, 0.4);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 224, 168, 0.1);
+}
+
+.bilan-container ul {
+    list-style: none; /* On enlève les points noirs moches */
+    padding: 0;
+}
+
+.bilan-container li {
+    position: relative;
+    margin-bottom: 1.5rem;
+    padding: 1.2rem 1.5rem 1.2rem 3.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 4px solid #00e0a8; /* La barre verte de ton thème */
+    border-radius: 0 10px 10px 0;
+    color: #e0e0e0;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+/* L'icône avant chaque point (Checkmark stylisé) */
+.bilan-container li::before {
+    content: "✓";
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #00e0a8;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-shadow: 0 0 8px rgba(0, 224, 168, 0.6);
+}
+
+/* Effet au survol des points clés */
+.bilan-container li:hover {
+    background: rgba(0, 224, 168, 0.08);
+    transform: translateX(10px);
+    box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);
+    border-left: 4px solid #3a86ff; /* Change de couleur au hover pour le style */
+}
+
+/* Petit éclat lumineux sur le texte au hover */
+.bilan-container li:hover::before {
+    color: #3a86ff;
+    text-shadow: 0 0 12px rgba(58, 134, 255, 0.8);
+}
+
 .section-title, .page-title, .titrePage {
     font-size: clamp(1.6rem, 4vw, 2.7rem);
     margin: 0 0 1rem 0;

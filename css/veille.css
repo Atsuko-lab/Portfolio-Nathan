@@ -269,11 +269,35 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
+.veille-box{
+    display: grid;
+    /* Crée 2 colonnes de largeur égale (1fr chacune) */
+    grid-template-columns: repeat(3, 1fr); 
+    /* Espace entre les cartes */
+    gap: 2rem;
+}
+
+
+
+
 .info-card,
 .learning-card,
 .project-card,
 .article-box {
     position: relative;
+}
+
+.note {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #0a6b46;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .info-card,
