@@ -449,6 +449,9 @@ footer {
     .competences-container,
     .learnings-grid,
     .projects-container,
+    .veille-box {
+        grid-template-columns: 1fr;
+    }
     main {
         grid-template-columns: 1fr;
     }
