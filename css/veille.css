@@ -278,8 +278,13 @@ main {
 }
 
 
-
-
+.article-image {
+    width: 100%;
+    border-radius: calc(var(--radius) * 0.8);
+    margin: 1.2rem 0;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 .info-card,
 .learning-card,
 .project-card,
